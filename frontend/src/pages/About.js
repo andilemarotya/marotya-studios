@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/About.css";
 
 const About = () => {
-    return(
+    return (
         <section className="abt-page">
             <h3 className="header">About Us</h3>
             <hr/>
