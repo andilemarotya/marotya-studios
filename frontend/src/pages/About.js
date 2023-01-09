@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/About.css";
 
-const Home = () => {
+const About = () => {
     return(
         <section className="abt-page">
             <h3 className="header">About Us</h3>
@@ -79,4 +79,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default About;
