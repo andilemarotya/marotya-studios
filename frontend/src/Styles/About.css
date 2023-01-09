@@ -1,0 +1,108 @@
+
+.abt-page {
+    margin: 2rem 3rem;
+}
+
+.header {
+    width: 100%;
+    font-size: 200%;
+    color: rgba(24, 160, 251, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.045rem;
+    padding-bottom: 10px;
+}
+
+.company {
+    width: 100%;
+    height: 260px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#descr-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 8%;
+   
+    background: #E1E1E1;
+    border-radius: 8px;
+    font-size: 200%;
+    letter-spacing: 1px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#descr-text {
+    width: 80%;
+}
+
+.management {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#manag-header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    letter-spacing: 1px;
+    color:  rgba(24, 160, 251, 1);
+   padding-bottom: 1%;
+}
+
+#team {
+    width: 100%;
+    height: 50vh;
+    background: #1A83E4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.person-wrapper {
+    border:0.5px solid black ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 85%;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.photo {
+    width: 28%;
+   
+}
+
+.details {
+    border: 0.5px solid black;
+    width: 90%;
+    height: 60%;
+    align-items: center;
+    background: #0E365B;
+}
+
+.intel {
+    color: aliceblue;
+    font-size: 90%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+    left: 2%;
+    top: 2%;
+}

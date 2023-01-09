@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Desktop Navingation bar styling*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #00386B;
+}
+
+.mslogo{
+    width: 130px;
+    height: 70px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 85%;
+
+}
+
+.home,
+.services,
+.about,
+.contact{
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    padding: 6px 20px;
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 29px;
+    background: linear-gradient(0deg, #1A83E4, #1A83E4), #FFFFFF;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+/*Hovering and active navigation bar*/
+.home:hover{
+    background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
+}
+
+
+
+.services:hover{
+    background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
+}
+
+.about:hover{
+    background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
+}
+
+.contact:hover,
+.contactisActive{
+    background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+/*End of Desktop nav styling*/
+
+/*Start of Mobile nav bar styling*/
+@media screen and (max-width: 780px) {
+    .log{
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 35px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #003866;
+        right: 0;
+        top: 75px;
+        bottom: 150px;
+        transition: all 0.5s ease-out;
+        width: 44%;
+        border-radius: 0px 0px 0px 40px;
+        
+    }
+    
+    .home,
+    .services,
+    .about,
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 2.4rem;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu{
+        display: block;
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        top: 15px;
+        right: 25px;
+
+    }
+
+}
