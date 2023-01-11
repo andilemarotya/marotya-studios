@@ -1,13 +1,22 @@
 import { Link } from "react-router-dom";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import './Navbar.css';
 import logo from '../images/Marotya-Studios-Logo.png';
+import { useLocation } from "react-router-dom";
 
 
 const NavBar = () => {
 
     const [isMobile,setIsMobile] = useState(false);
+    const [activePathy,setActivePath] = useState('/');
+    const path = useLocation().pathname;
+
+    // set PATH to current activePath
+    useEffect(()=>{
+
+
+    }, [])
 
     
     return ( 
@@ -15,7 +24,8 @@ const NavBar = () => {
             <Link to="/"><img src={logo} className="mslogo" alt=''/></Link>
             <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
             onClick={() => setIsMobile(false)}>
-                <Link to="/" className="home">
+                {/* check for each link path against activePath  */}
+                <Link to="/" className={"home ${isActive == 1 && 'active'}"}>
                     <li>Home</li>
                 </Link>
                 <Link to="/Services" className="services">

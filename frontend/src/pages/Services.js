@@ -1,7 +1,13 @@
 import React from "react";
 import "../Styles/Services.css";
+import { useState } from "react";
+import Enquirepop from "../components/Enquirepop";
 
 const Services = () => {
+
+    const [isEnquire,setEnquire] = useState(false);
+    const [openPopup , setOpenPopop] = useState(false);
+
     return(
         <div>
             <section className="services_section1">
@@ -23,10 +29,11 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire">Enquire</button>
+                            <button className="enquire" onClick={() => setEnquire(!isEnquire)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$99.95 - $1000+</div>
                             </div>
+
                         </div>
                         <img src="/images/services/Website_pic.png" alt="" className="web-img"/>
                     </div>
@@ -47,7 +54,7 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire">Enquire</button>
+                            <button className="enquire" onClick={() => setEnquire(!isEnquire)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$249.95 - $1000+</div>
                             </div>
@@ -71,7 +78,7 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire2">Enquire</button>
+                            <button className="enquire2" onClick={() => setEnquire(!isEnquire)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$599.95 - $10000+</div>
                             </div>
@@ -96,7 +103,7 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire2">Enquire</button>
+                            <button className="enquire2" onClick={() => setOpenPopop(!openPopup)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$599.95 - $10000+</div>
                             </div>
@@ -107,8 +114,21 @@ const Services = () => {
                 {/*A.I service Section style ends here*/}
                 <hr/>
 
+                 {/*Here we write the enquiry form  that's goona be displayed on enquire button
+                 
+                 {isEnquire && (<form className={isEnquire ? "":""}>
+                    <label type='text'>Full Name</label>
+                    <input type='name' className="name-input" name="user_name" placeholder="e.g) Nelson Mandela"/>
+
+
+                </form>)}
+                */}
 
             </section>
+            <Enquirepop>
+                openPopup = {openPopup};
+                setOpenPopop = {setOpenPopop}
+            </Enquirepop>
 
         </div>
     );
