@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../Styles/Home.css';
 
 const Home = () => {
@@ -25,18 +26,17 @@ const Home = () => {
                     <div id="services">
                         <div className="serv-wrapper">
                             <div className="serv-text-wrapper">MS Services</div>
-                            <img src='/images/home/home_ms-services.png' alt='' className="h_service_pic"/>
-                        </div>
-                        
-                    </div>
-                    <hr/>
-                </section>
-                
-                <section className="ms-services">
-                    <div id="services">
-                        <div className="serv-wrapper">
-                            <div className="serv-text-wrapper">MS Products</div>
-                            <img src='/images/home/home_ms-products.png' alt='' className="h_service_pic"/>
+                            
+                            <div className="card-wrapper">
+                                <img src='/images/home/home_ms-services.png' alt='' className="h_service_pic"/>
+                                <p className="link-details">
+                                    All the services / custom services we offer can be found here.<br/>
+                                    You can view the by clicking on the “View” button below
+                                </p>
+                            </div>
+                            <br/>
+                            <Link to="/Services" alt="" className="view-btn">View</Link>
+                            <br/>
                         </div>
                         
                     </div>
@@ -46,13 +46,46 @@ const Home = () => {
                 <section className="ms-services">
                     <div id="services">
                         <div className="serv-wrapper">
-                            <div className="serv-text-wrapper">MS Games</div>
-                            <img src='/images/home/home_ms-games.png' alt='' className="h_service_pic"/>
+                            <div className="serv-text-wrapper">MS Products</div>
+                            
+                            <div className="card-wrapper">
+                                <img src='/images/home/home_ms-products.png' alt='' className="h_service_pic"/>
+                                <p className="link-details">
+                                    All our released innovative projects / products can be accessed here.<br/>
+                                    You can view them by clicking on the “View” button below
+                                </p>
+                            </div>
+                            <br/>
+                            <Link to="/" alt="" className="view-btn">View</Link>
+                            <br/>
                         </div>
                         
                     </div>
                     <hr/>
                 </section>
+
+
+                <section className="ms-services">
+                    <div id="services">
+                        <div className="serv-wrapper">
+                            <div className="serv-text-wrapper">MS Games</div>
+                            
+                            <div className="card-wrapper">
+                                <img src='/images/home/home_ms-games.png' alt='' className="h_service_pic"/>
+                                <p className="link-details">
+                                    All our released / coming soon games we are developing can be found here.<br/> 
+                                    You can view the by clicking on the “View” button below
+                                </p>
+                            </div>
+                            <br/>
+                            <Link to="/" alt="" className="view-btn">View</Link>
+                            <br/>
+                        </div>
+                        
+                    </div>
+                    <hr/>
+                </section>
+            
             </section>
 
            

@@ -28,8 +28,8 @@ const Contact = () => {
 
             <div className="contacts">
                 <section className="contact-text">
-                    <p>
-                        To get in touch with us fill out the form on the right or send us an email here.
+                    <p className="us">
+                        To get in touch with us fill out the form on the right.
                         If you need to get in touch with us urgently you can call us!  The management phone numbers are on the “About Us page”
                     </p>
                 </section>

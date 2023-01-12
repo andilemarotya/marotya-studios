@@ -161,3 +161,37 @@
 }
 
 /*Software styling ends here*/
+
+.EnquireForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-area {
+    padding: 1% 1%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 50vh;
+    min-height: 25vh;
+}
+
+.form-btns-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-btns {
+    padding: 8px 20px;
+    color: #F7F7F7;
+    background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form-btns:hover {
+    background: rgba(0, 0, 0, 0.57);
+}
+
+input {
+    height: 4vh;
+}

@@ -1,12 +1,32 @@
 import React from "react";
 import "../Styles/Services.css";
 import { useState } from "react";
-import Enquirepop from "../components/Enquirepop";
+import EnquirePopUp from "../components/EnquirePopUp";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 
 const Services = () => {
 
-    const [isEnquire,setEnquire] = useState(false);
-    const [openPopup , setOpenPopop] = useState(false);
+    const [BtnPopUp , setBtnPopUp] = useState(false);
+
+
+    {/*This is where we define send email function*/}
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_hddu6zw', 'template_ty2ky7b', form.current, 'TUzGZFgWB8_xhny8t')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.target.reset()
+    };
+    
 
     return(
         <div>
@@ -29,7 +49,7 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire" onClick={() => setEnquire(!isEnquire)}>Enquire</button>
+                            <button className="enquire" onClick={() => setBtnPopUp(true)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$99.95 - $1000+</div>
                             </div>
@@ -54,7 +74,7 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire" onClick={() => setEnquire(!isEnquire)}>Enquire</button>
+                            <button className="enquire" onClick={() => setBtnPopUp(true)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$249.95 - $1000+</div>
                             </div>
@@ -78,7 +98,7 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire2" onClick={() => setEnquire(!isEnquire)}>Enquire</button>
+                            <button className="enquire2" onClick={() => setBtnPopUp(true)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$599.95 - $10000+</div>
                             </div>
@@ -103,7 +123,7 @@ const Services = () => {
 
                     <div className="img-wrapper">
                         <div className="price-wrapper">
-                            <button className="enquire2" onClick={() => setOpenPopop(!openPopup)}>Enquire</button>
+                            <button className="enquire2" onClick={() => setBtnPopUp(true)}>Enquire</button>
                             <div className="price">
                                 Price: <div id="amount">$599.95 - $10000+</div>
                             </div>
@@ -123,13 +143,35 @@ const Services = () => {
 
                 </form>)}
                 */}
-
+                
             </section>
-            <Enquirepop>
-                openPopup = {openPopup};
-                setOpenPopop = {setOpenPopop}
-            </Enquirepop>
 
+
+            {/* This is where we use our created pop up form */}
+            <EnquirePopUp trigger={BtnPopUp} setTrigger={setBtnPopUp}>
+                <form ref={form} onSubmit={sendEmail} className="EnquireForm">
+                    <label type="text">Full Name</label>
+                    <input placeholder=" e.g) Nelson Mandela" name="user_name" required/>
+                    <br/>
+
+                    <label type="email">Email</label>
+                    <input placeholder=" e.g) ayandamarotya@gmail.com" name="user_email" required/>
+                    <br/>
+
+                    <label>Subject</label>
+                    <output>Your Subject</output>
+                    <br/>
+
+                    <label>Message</label>
+                    <textarea cols="10" rows="10" className="text-area"/>
+                    <br/>
+                    
+                    <div className="form-btns-wrapper">
+                        <button className="form-btns" >Submit</button>
+                    </div>
+
+                </form>
+            </EnquirePopUp>
         </div>
     );
 }
