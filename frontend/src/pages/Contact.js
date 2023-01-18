@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Contact.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import EnquirePopUp from "../components/EnquirePopUp";
 
 const Contact = () => {
 
@@ -20,6 +21,8 @@ const Contact = () => {
         e.target.reset()
     };
 
+    const [msgSent , setMsgSent] = useState(false);
+
         
     return(
         <div className="contact_page">
@@ -36,20 +39,28 @@ const Contact = () => {
 
                 <section className="contact-form">
                     <form ref={form} onSubmit={sendEmail} className="reader">
-                        <label type="full-name" id="first">Full name</label>
-                        <input className="f-name" type='text' placeholder="(e.g) John Smith" name="user_name" required/>
+                        <label type="full-name">Full name</label>
+                        <input className="InputContact" type='text' placeholder="(e.g) John Smith" name="user_name" required/>
 
-                        <label type="Email" id="second">Email</label>
-                        <input className="Email" type='email' placeholder="e.g) ayandamarotya@gmail.com " name="user_email" required/>
+                        <label type="Email" >Email</label>
+                        <input className="InputContact" type='email' placeholder="e.g) ayandamarotya@gmail.com " name="user_email" required/>
+
+                        <label type="Subject">Subject</label>
+                        <input className="InputContact" type='text' placeholder="Subject" name="subject" required/>
+
 
                         <label type="Msg" id="third">Message</label>
                         <textarea name="message" className="your-message"  cols="11" rows="8"/>
-                        <button type="submit" className="submit-btn">Submit</button>
+                        <button type="submit" className="submit-btn" onClick={() => setMsgSent(true)}>Submit</button>
 
 
                     </form>
                 </section>
             </div>
+
+            <EnquirePopUp trigger={msgSent} setTrigger={setMsgSent}>
+                <div className="sent">Message Sent</div>
+            </EnquirePopUp>
         </div>
     );
 }

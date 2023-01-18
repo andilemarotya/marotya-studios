@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link , NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import './Navbar.css';
@@ -10,7 +10,7 @@ const NavBar = () => {
 
     const [isMobile,setIsMobile] = useState(false);
     const [activePathy,setActivePath] = useState('/');
-    const path = useLocation().pathname;
+    const {pathname} = useLocation();
 
     // set PATH to current activePath
     useEffect(()=>{
@@ -25,18 +25,18 @@ const NavBar = () => {
             <ul className={isMobile ? "nav-links-mobile" : "nav-links"}
             onClick={() => setIsMobile(false)}>
                 {/* check for each link path against activePath  */}
-                <Link to="/" className={"home ${isActive == 1 && 'active'}"}>
-                    <li>Home</li>
-                </Link>
-                <Link to="/Services" className="services">
+                <NavLink exact to="/" className={pathname === "/" ? "active" : "link"}>
+                    <li >Home</li>
+                </NavLink>
+                <NavLink to="/Services"  className={pathname === "/Services" ? "active" : "link"}>
                     <li>Services</li>
-                </Link>
-                <Link to="/About" className="about">
-                    <li>About Us</li>
-                </Link>
-                <Link to="/Contact" className="contact">
-                    <li>Contact Us</li>
-                </Link>
+                </NavLink>
+                <NavLink to="/About" className={pathname === "/About" ? "active" : "link"}>
+                    <li >About Us</li>
+                </NavLink>
+                <NavLink to="/Contact" className={pathname === "/Contact" ? "active" : "link"}>
+                    <li >Contact Us</li>
+                </NavLink>
             </ul>
             <button className="mobile-menu"  onClick={() => setIsMobile(!isMobile)}>
                 {isMobile ? (<FaTimes/>

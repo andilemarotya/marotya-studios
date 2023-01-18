@@ -46,68 +46,45 @@
 .contact-form {
     background: #E1E1E1;
     width: 34%;
-    height: 60vh;
+    height: 55vh;
     border: 1px solid black;
     position: relative;
     right: 12%;
 }
 
 .reader {
-
-    width: 100%;
-    height: 58vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
     background: linear-gradient(0deg, rgba(255, 202, 202, 0.2), rgba(255, 202, 202, 0.2)), #F7F7F7;
-
+    border: 1px solid #000000;
     position: relative;
-    top: 14%;
-    left: 14%;
+    left: 18%;
+    top: 20px;
+    gap: 10px;
+    padding: 10px;
 
-}
-
-
-
-.f-name, .Email, .your-message {
-    width: 80%;
-    margin-bottom: 6%;
-    position: relative;
-    max-width: 100%;
-    min-width: 60%;
 }
 
 .your-message {
     font-size: 85%;
     padding: 1.5% 1.5%;
-    max-width: 80%;
+    max-width: 100%;
     min-height: 20vh;
 }
 
-#first {
-    position: relative;
-    right: 28%;
-}
 
-#second {
-    position: relative;
-    right: 33%;
-}
-#third {
-    position: relative;
-    right: 30%;
-}
 
 .submit-btn {
     color: white;
     background: linear-gradient(180deg, #000000 99.99%, rgba(0, 0, 0, 0) 100%), #FFFFFF;
     border-radius: 10px;
-    
+    width: 25%;
     padding: 6px;
-    position: relative;
-    right: 30%;
     cursor: pointer;
 
+}
+
+.InputContact {
+    text-align: left;
+    padding: 0 1%;
 }

@@ -109,6 +109,11 @@ hr {
     padding: 1% 12%;
     border-radius: 8px;
     letter-spacing: 0.6px;
+    cursor: pointer;
 }
 
+.Not-Released {
+    display: flex;
+    justify-content: center;
+}
 

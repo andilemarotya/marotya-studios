@@ -23,13 +23,10 @@
     justify-content: flex-end;
     list-style: none;
     width: 85%;
-
+    gap: 5px
 }
 
-.home,
-.services,
-.about,
-.contact{
+.link {
     text-decoration: none;
     color: black;
     font-family: 'Inter';
@@ -37,12 +34,30 @@
     font-weight: 400;
     padding: 6px 20px;
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 29px;
     background: linear-gradient(0deg, #1A83E4, #1A83E4), #FFFFFF;
     border-radius: 8px;
-    gap: 10px;
 }
+
+.link:hover {
+    background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
+}
+
+.active {
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 550;
+    padding: 6px 20px;
+    margin: 0 10px;
+    font-size: 20px;
+    line-height: 29px;
+    background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
+    border-radius: 8px;
+}
+
 
 /*Hovering and active navigation bar*/
 .home:hover{
@@ -59,8 +74,7 @@
     background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
 }
 
-.contact:hover,
-.contactisActive{
+.contact:hover {
     background:  linear-gradient(0deg, rgba(24, 160, 251, 0.74), rgba(24, 160, 251, 0.74)), #FFFFFF;
 }
 

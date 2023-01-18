@@ -1,11 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../components/Footer.css";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-
+import {FaInstagram , FaFacebook, FaLinkedin, FaWhatsapp, FaYoutube, FaYoutubeSquare, FaTwitter} from 'react-icons/fa';
 
 
 const Footer = () => {
@@ -20,8 +16,9 @@ const Footer = () => {
                 
                 <div className="info">
                     <span id="text">To get updates on our new releases fill in below.</span>
+                    
                     <form className="email"> 
-                        <input className="fill" placeholder="Enter email" label="To get updates on our new releases fill in below"></input>
+                        <input className="fill" placeholder="Enter email" name="sub_email" required/>
                         <button className="btn-sub">Subscribe</button>
                     </form>
 
@@ -35,9 +32,9 @@ const Footer = () => {
                         </ul>
 
                         <ul className="list2">
-                            <Link to="" className="f-partner">Partnership</Link>
-                            <Link to="" className="f-mail">marotyastudios@gmail.com</Link>
-                            <span className="f-no">Phone: +27 72 975 9950</span>
+                            
+                            <a href="mailto:marotyastudios@gmail.com" className="f-mail">marotyastudios@gmail.com</a>
+                            <a href="tel:+27729759950" className="f-no">Phone: +27 72 975 9950</a>
                             <Link to="/Terms" className="terms">Terms & Conditions</Link>
                         </ul>
                     </ul>
@@ -48,7 +45,17 @@ const Footer = () => {
             <hr id="foot-line"/>
             <div className="end">
                 <span>All rights reserved</span>
-                <div>Social Media Links</div>
+                
+                <div className="social-media">
+                    <a href="https://www.instagram.com/marotyastudios/"><FaInstagram className="icons"/></a>
+                    <a href="https://www.facebook.com/profile.php?id=100087907607594"><FaFacebook className="icons"/></a>
+                    <a href="https://www.linkedin.com/company/marotya-studios/"><FaLinkedin className="icons"/></a>
+                    <a href=" https://wa.me/+27729759950"><FaWhatsapp className="icons"/></a>
+                
+                </div>
+                
+
+
             </div>
              
         </footer>

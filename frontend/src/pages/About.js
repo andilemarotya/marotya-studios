@@ -37,8 +37,8 @@ const About = () => {
                             <p className="intel">
                                 Mandile Marotya <br/><br/>
                                 CO-CEO / Co-founder     (Software engineer) <br/><br/>
-                                phone:  +27 72 975 9950 <br/><br/>
-                                E-mail:  marotyastudios@gmail.com <br/>
+                                <a href="tel:+27729759950">Phone:  +27 72 975 9950 </a><br/><br/>
+                                <a href="mailto:marotyastudios@gmail.com">E-mail:  marotyastudios@gmail.com</a><br/>
                             </p>
                         </div>
                     </div>
@@ -49,8 +49,8 @@ const About = () => {
                             <p className="intel">
                                 Ayanda Marotya <br/><br/>
                                 CO-CEO / Co-founder     (Software engineer) <br/><br/>
-                                phone:  +27 72 975 9950 <br/><br/>
-                                E-mail:  ayandamarotya@gmail.com <br/>
+                                <a href="tel:+27729759950">Phone:  +27 72 975 9950 </a><br/><br/>
+                                <a href="mailto:ayandamarotya@gmail.com">E-mail:  ayandamarotya@gmail.com</a><br/>
                             </p>
                         </div>
                     </div>
@@ -61,8 +61,8 @@ const About = () => {
                             <p className="intel">
                                 Lebogang Sijila <br/><br/>
                                 CMO / Marketing manager <br/><br/>
-                                phone:  +27 62 380 1425 <br/><br/>
-                                E-mail:  lebosi709@gmail.com <br/>
+                                <a href="tel:+27729759950">Phone:  +27 62 380 1425 </a><br/><br/>
+                                <a href="mailto:lebosi709@gmail.com">E-mail:  lebosi709@gmail.com</a><br/>
                             </p>
                         </div>
                     </div>

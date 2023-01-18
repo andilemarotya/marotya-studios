@@ -9,6 +9,7 @@ import emailjs from "@emailjs/browser";
 const Services = () => {
 
     const [BtnPopUp , setBtnPopUp] = useState(false);
+    const [msgSent , setMsgSent] = useState(false);
 
 
     {/*This is where we define send email function*/}
@@ -122,6 +123,7 @@ const Services = () => {
                     </div>
 
                     <div className="img-wrapper">
+
                         <div className="price-wrapper">
                             <button className="enquire2" onClick={() => setBtnPopUp(true)}>Enquire</button>
                             <div className="price">
@@ -151,27 +153,39 @@ const Services = () => {
             <EnquirePopUp trigger={BtnPopUp} setTrigger={setBtnPopUp}>
                 <form ref={form} onSubmit={sendEmail} className="EnquireForm">
                     <label type="text">Full Name</label>
-                    <input placeholder=" e.g) Nelson Mandela" name="user_name" required/>
+                    <input className="PopInput" placeholder=" e.g) Nelson Mandela" name="user_name" required/>
                     <br/>
 
                     <label type="email">Email</label>
-                    <input placeholder=" e.g) ayandamarotya@gmail.com" name="user_email" required/>
+                    <input className="PopInput" placeholder=" e.g) ayandamarotya@gmail.com" name="user_email" required/>
                     <br/>
 
-                    <label>Subject</label>
-                    <output>Your Subject</output>
+                    <label>Service</label>
+                    <select className="PopInput" name="subject">
+                        <option>Website</option>
+                        <option>Mobile Application</option>
+                        <option>Software</option>
+                        <option>Artificial Intelligence</option>
+
+                    </select>
                     <br/>
 
                     <label>Message</label>
-                    <textarea cols="10" rows="10" className="text-area"/>
+                    <textarea cols="10" rows="10" name="message" className="text-area"/>
                     <br/>
                     
                     <div className="form-btns-wrapper">
-                        <button className="form-btns" >Submit</button>
+                        <button className="form-btns"  onClick={() => setMsgSent(true)}>Submit</button>
                     </div>
 
                 </form>
             </EnquirePopUp>
+
+            <EnquirePopUp trigger={msgSent} setTrigger={setMsgSent}>
+                <div className="sent">Message Sent</div>
+            </EnquirePopUp>
+
+
         </div>
     );
 }

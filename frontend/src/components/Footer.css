@@ -58,7 +58,7 @@ input {
 .fill {
     width: 40%;
     padding: 0.7% 0.7%;
-    border: 0.4px solid #000000;
+    border: none;
     border-radius: 0px 20px 20px 0px;
     position: relative;
     left: 4%;
@@ -75,7 +75,12 @@ input {
     background: linear-gradient(0deg, #1A83E4, #1A83E4), #FFFFFF;
     border-radius: 6px;
     border: none;
+    cursor: pointer;
     
+}
+
+.btn-sub:hover {
+    background:  linear-gradient(0deg, #54B8FC, #54B8FC), #FFFFFF;
 }
 
 .foot-links {
@@ -134,4 +139,15 @@ input {
     margin: 0.5% 4%;
     justify-content: space-between;
     align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap:30px
+}
+
+.icons {
+    font-size: 140%;
+    color: antiquewhite;
+    cursor: pointer;
 }

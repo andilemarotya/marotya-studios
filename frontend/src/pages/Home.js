@@ -1,10 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import EnquirePopUp from "../components/EnquirePopUp";
 import '../Styles/Home.css';
+import { useState } from "react";
 
 const Home = () => {
+
+    const [BtnPopUp , setBtnPopUp] = useState(false);                            {/*This is for the view state of the unavailable sections*/}
+    const [BtnPopUpGames , setBtnPopUpGames] = useState(false);
+
     return(
-        <div>
+       
             <section className="home_section1">
                 <h3 className="ms">Marotya Studios.</h3>
                 <hr/>
@@ -56,7 +62,7 @@ const Home = () => {
                                 </p>
                             </div>
                             <br/>
-                            <Link to="/" alt="" className="view-btn">View</Link>
+                            <button className="view-btn"  onClick={() => setBtnPopUp(true)}>View</button>                      {/* Will update this button to Link when released products*/}
                             <br/>
                         </div>
                         
@@ -78,7 +84,7 @@ const Home = () => {
                                 </p>
                             </div>
                             <br/>
-                            <Link to="/" alt="" className="view-btn">View</Link>
+                            <button className="view-btn"  onClick={() => setBtnPopUpGames(true)}>View</button>                     {/* Will update this button to Link when released products*/}
                             <br/>
                         </div>
                         
@@ -86,11 +92,24 @@ const Home = () => {
                     <hr/>
                 </section>
             
+                {/*Pop up for the unreleased Games and Innovations*/}
+                <EnquirePopUp trigger={BtnPopUp} setTrigger={setBtnPopUp}>
+                    <div className="Not-Released">
+                        No Released Products yet
+                    </div>
+                </EnquirePopUp>
+
+                <EnquirePopUp trigger={BtnPopUpGames} setTrigger={setBtnPopUpGames}>
+                    <div className="Not-Released">
+                        No Released Games yet
+                    </div>
+                </EnquirePopUp>
+
             </section>
 
            
 
-        </div>
+        
     );
 }
 
