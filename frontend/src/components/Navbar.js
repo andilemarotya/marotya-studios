@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link , NavLink} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";

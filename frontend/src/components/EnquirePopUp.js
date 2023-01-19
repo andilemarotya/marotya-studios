@@ -1,6 +1,6 @@
 import React from 'react';
 import "../components/EnquirePopUp.css";
-import CloseIcon from '@mui/icons-material/Close';
+
 
 export default function EnquirePopUp(props) {
   return (props.trigger) ? (
