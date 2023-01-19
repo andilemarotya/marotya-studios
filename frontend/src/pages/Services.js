@@ -21,6 +21,7 @@ const Services = () => {
         emailjs.sendForm('service_hddu6zw', 'template_ty2ky7b', form.current, 'TUzGZFgWB8_xhny8t')
         .then((result) => {
             console.log(result.text);
+           
         }, (error) => {
             console.log(error.text);
         });
@@ -175,16 +176,11 @@ const Services = () => {
                     <br/>
                     
                     <div className="form-btns-wrapper">
-                        <button className="form-btns"  onClick={() => setMsgSent(true)}>Submit</button>
+                        <button className="form-btns" >Submit</button>
                     </div>
 
                 </form>
             </EnquirePopUp>
-
-            <EnquirePopUp trigger={msgSent} setTrigger={setMsgSent}>
-                <div className="sent">Message Sent</div>
-            </EnquirePopUp>
-
 
         </div>
     );

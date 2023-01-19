@@ -4,6 +4,7 @@ import "../components/Footer.css";
 import {FaInstagram , FaFacebook, FaLinkedin, FaWhatsapp, FaYoutube, FaYoutubeSquare, FaTwitter} from 'react-icons/fa';
 
 
+
 const Footer = () => {
     
     return ( 
@@ -16,7 +17,7 @@ const Footer = () => {
                 
                 <div className="info">
                     <span id="text">To get updates on our new releases fill in below.</span>
-                    
+
                     <form className="email"> 
                         <input className="fill" placeholder="Enter email" name="sub_email" required/>
                         <button className="btn-sub">Subscribe</button>
@@ -45,7 +46,6 @@ const Footer = () => {
             <hr id="foot-line"/>
             <div className="end">
                 <span>All rights reserved</span>
-                
                 <div className="social-media">
                     <a href="https://www.instagram.com/marotyastudios/"><FaInstagram className="icons"/></a>
                     <a href="https://www.facebook.com/profile.php?id=100087907607594"><FaFacebook className="icons"/></a>
