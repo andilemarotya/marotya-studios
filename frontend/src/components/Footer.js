@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../components/Footer.css";
-import {FaInstagram , FaFacebook, FaLinkedin, FaWhatsapp, FaYoutube, FaYoutubeSquare, FaTwitter} from 'react-icons/fa';
+import {FaInstagram , FaFacebook, FaLinkedin, FaWhatsapp,} from 'react-icons/fa';
 
 
 

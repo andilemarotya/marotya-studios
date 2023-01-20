@@ -9,7 +9,7 @@ import emailjs from "@emailjs/browser";
 const Services = () => {
 
     const [BtnPopUp , setBtnPopUp] = useState(false);
-    const [msgSent , setMsgSent] = useState(false);
+    {/*const [msgSent , setMsgSent] = useState(false);*/}
 
 
     {/*This is where we define send email function*/}

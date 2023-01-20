@@ -10,7 +10,6 @@ import { useLocation } from "react-router-dom";
 const NavBar = () => {
 
     const [isMobile,setIsMobile] = useState(false);
-    const [activePathy,setActivePath] = useState('/');
     const {pathname} = useLocation();
 
     // set PATH to current activePath
