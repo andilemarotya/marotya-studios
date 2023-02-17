@@ -15,8 +15,7 @@
     position: relative;
     padding: 32px;
     width: 100%;
-    max-width: 80%;
-    /*background-color: #FFF;*/
+    max-width: 55%;
     background:linear-gradient(180deg, rgba(255, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #1A83E4;
     border-radius: 25px;
 }
