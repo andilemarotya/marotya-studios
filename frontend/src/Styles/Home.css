@@ -171,8 +171,8 @@ hr {
     }
     
     .link-details {
-        width: 98%;
-        border-radius: 0;
+        width: 96%;
+        border-radius: 10px 0;
     }
 
 }
