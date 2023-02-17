@@ -183,7 +183,6 @@ hr {
     }
 
     .ms-services{
-        margin: 1.4rem 0.5rem; 
         width: 100%;
     }
     
@@ -215,8 +214,7 @@ hr {
         font-size: 2.8em;
         height: 70px;
     }
-    .ms-services{
-        margin: 1.4rem 0.5rem; 
+    .ms-services{ 
         width: 100%;
     }
     
