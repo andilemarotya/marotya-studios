@@ -146,41 +146,40 @@ const Services = () => {
 
                 </form>)}
                 */}
+
+                 {/* This is where we use our created pop up form */}
+                <EnquirePopUp trigger={BtnPopUp} setTrigger={setBtnPopUp}>
+                    <form ref={form} onSubmit={sendEmail} className="EnquireForm">
+                        <label type="text">Full Name</label>
+                        <input className="PopInput" placeholder=" e.g) Nelson Mandela" name="user_name" required/>
+                        <br/>
+
+                        <label type="email">Email</label>
+                        <input className="PopInput" placeholder=" e.g) ayandamarotya@gmail.com" name="user_email" required/>
+                        <br/>
+
+                        <label>Service</label>
+                        <select className="PopInput" name="subject">
+                            <option>Website</option>
+                            <option>Mobile Application</option>
+                            <option>Software</option>
+                            <option>Artificial Intelligence</option>
+
+                        </select>
+                        <br/>
+
+                        <label>Message</label>
+                        <textarea cols="10" rows="10" name="message" className="text-area"/>
+                        <br/>
+                        
+                        <div className="form-btns-wrapper">
+                            <button className="form-btns" >Submit</button>
+                        </div>
+
+                    </form>
+                </EnquirePopUp>
                 
             </section>
-
-
-            {/* This is where we use our created pop up form */}
-            <EnquirePopUp trigger={BtnPopUp} setTrigger={setBtnPopUp}>
-                <form ref={form} onSubmit={sendEmail} className="EnquireForm">
-                    <label type="text">Full Name</label>
-                    <input className="PopInput" placeholder=" e.g) Nelson Mandela" name="user_name" required/>
-                    <br/>
-
-                    <label type="email">Email</label>
-                    <input className="PopInput" placeholder=" e.g) ayandamarotya@gmail.com" name="user_email" required/>
-                    <br/>
-
-                    <label>Service</label>
-                    <select className="PopInput" name="subject">
-                        <option>Website</option>
-                        <option>Mobile Application</option>
-                        <option>Software</option>
-                        <option>Artificial Intelligence</option>
-
-                    </select>
-                    <br/>
-
-                    <label>Message</label>
-                    <textarea cols="10" rows="10" name="message" className="text-area"/>
-                    <br/>
-                    
-                    <div className="form-btns-wrapper">
-                        <button className="form-btns" >Submit</button>
-                    </div>
-
-                </form>
-            </EnquirePopUp>
 
         </div>
     );

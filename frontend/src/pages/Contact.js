@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../Styles/Contact.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import EnquirePopUp from "../components/EnquirePopUp";
+
+
 
 const Contact = () => {
 
@@ -58,9 +59,7 @@ const Contact = () => {
                 </section>
             </div>
 
-            <EnquirePopUp trigger={msgSent} setTrigger={setMsgSent}>
-                <div className="sent">Message Sent</div>
-            </EnquirePopUp>
+           
         </div>
     );
 }

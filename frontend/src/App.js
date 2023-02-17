@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 import Terms from "./pages/Terms";
 
 
+
+
 const App = () => {
   
   return (
