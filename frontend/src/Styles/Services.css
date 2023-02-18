@@ -128,7 +128,7 @@
 
 @media screen and (max-width:480px) {
     .services_section1 .Website-wrapper .web-text-wrapper {
-        padding-bottom: 1.4em;
+        padding-bottom: 1.6em;
     }
     .services_section1 .Website-wrapper .web-text-wrapper .web-text {
         width: 100%;
@@ -141,7 +141,7 @@
     }
 
     .price {
-        font-size: .888rem;
+        font-size: .9rem;
         margin: 0;
     }
 }
