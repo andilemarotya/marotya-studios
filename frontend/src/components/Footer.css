@@ -25,7 +25,6 @@
 
 .info {
 
-    height: 96%;
     width:40%;
     position: relative;
     top: 2%;
@@ -121,21 +120,6 @@ input {
     font-size: 1rem;
 }
 
-@media screen and (max-width:480px) {
-    .footer-logo {
-       display: none;
-    }
-    .info {
-        width: 100%;
-    }
-
-    #text {
-       width: 100%;
-        
-    }
-    
-}
-
 #foot-line {
     color: #000;
     
@@ -161,4 +145,30 @@ input {
     font-size: 1.1rem;
     color: antiquewhite;
     cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .footer-logo {
+       display: none;
+    }
+    .info {
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding-bottom: 1em;
+        
+    }
+
+    #text {
+       width: 100%;
+        
+    }
+    .foot-links {
+        justify-content: space-around;
+        
+    }
+    .list {
+        padding-right: 0;
+    }
+    
 }
