@@ -61,7 +61,7 @@ const Services = () => {
                     </div>
                 </div>
                 {/*Website Section style ends here*/}
-                <hr/>
+                <hr className="hr-line"/>
                 <br/><br/>
 
                 {/*Mobile App Section style starts here*/}
@@ -85,7 +85,7 @@ const Services = () => {
                     </div>
                 </div>
                 {/*Mobile App Section style ends here*/}
-                <hr/>
+                <hr className="hr-line"/>
                 <br/><br/>
 
                 {/*Software service Section style starts here*/}
@@ -109,8 +109,8 @@ const Services = () => {
                     </div>
                 </div>
                 {/*Software service Section style ends here*/}
-                <br/><br/><br/>
-                <hr/>
+                
+                <hr className="hr-line"/>
                 <br/><br/>
 
                 {/*A.I service Section style starts here*/}

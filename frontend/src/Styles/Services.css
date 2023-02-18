@@ -126,6 +126,10 @@
     
 }
 
+.hr-line {
+    width: 100%;
+}
+
 @media screen and (max-width:480px) {
     .services_section1 .Website-wrapper .web-text-wrapper {
         padding-bottom: 2em;
@@ -148,7 +152,10 @@
 
     .services_section1 .Website-wrapper .img-wrapper .web-img {
         width: 100%;
-        
+    }
+
+    .hr-line {
+        margin: 2.4em 0;
     }
 }
 
