@@ -19,7 +19,16 @@
 #hr-line1 {
     margin-bottom: 5em;
 }
+
 @media screen and (max-width:480px) {
+    .services_section1 .serv_header {
+        font-size: 1.4rem;
+    }
+    #hr-line1 {
+        margin-bottom: 4em;
+    }
+}
+@media screen and (min-width:481px) and (max-width:576px) {
     .services_section1 .serv_header {
         font-size: 1.4rem;
     }
@@ -39,6 +48,11 @@
 
 }
 @media screen and (max-width:480px) {
+    .services_section1 .Website-wrapper {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:481px) and (max-width:576px) {
     .services_section1 .Website-wrapper {
         flex-direction: column;
     }
@@ -165,6 +179,34 @@
         margin: 1.675em 0;
     }
 }
+@media screen and (min-width:481px) and (max-width:576px) {
+    .services_section1 .Website-wrapper .web-text-wrapper {
+        padding-bottom: 2em;
+    }
+    .services_section1 .Website-wrapper .web-text-wrapper .web-text {
+        width: 100%;
+        padding: 10% 6%;
+    }
+
+    .services_section1 .Website-wrapper .img-wrapper .price-wrapper {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .price {
+        font-size: .9rem;
+        margin: 0;
+        padding: 0.6em 1em;
+    }
+
+    .services_section1 .Website-wrapper .img-wrapper .web-img {
+        width: 100%;
+    }
+
+    .hr-line {
+        margin: 1.675em 0;
+    }
+}
 
 /*Website section styling ends here*/
 
@@ -183,6 +225,33 @@
         padding: 10% 6%;
     }
 }
+@media screen and (min-width:481px) and (max-width:576px) {
+    .services_section1 .Website-wrapper .web-text-wrapper .mobile-text {
+        width: 100%;
+        padding: 10% 6%;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .services_section1 .Website-wrapper .web-text-wrapper .mobile-text {
+        padding: 10% 6%;
+    }
+    .price {
+        font-size: .9rem;
+        margin: 0;
+        padding: 0.6em 1em;
+    }
+
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .services_section1 .Website-wrapper .web-text-wrapper .web-text {
+        padding: 13% 5%;
+    }
+    .services_section1 .Website-wrapper .web-text-wrapper .mobile-text {
+        padding: 13% 5%;
+    }
+
+}
+
 /*Mobile application styling ends here*/
 
 
@@ -221,6 +290,50 @@
         width: 100%;
         padding: 10% 6%;
     }
+}
+@media screen and (min-width:481px) and (max-width:576px) {
+    .services_section1 .Website-wrapper .web-text-wrapper .software-text {
+        width: 100%;
+        padding: 10% 6%;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px) {
+    .services_section1 .Website-wrapper .web-text-wrapper .software-text {
+        padding: 13% 4%;
+    }
+    .services_section1 .Website-wrapper .img-wrapper .price-wrapper {
+        width: 74%;
+    }
+    .price {
+        font-size: .6rem;
+        margin: 0 2em;
+    }
+    .services_section1 .Website-wrapper .img-wrapper .price-wrapper .enquire {
+        font-size: .8rem;
+    }
+    .services_section1 .Website-wrapper .img-wrapper .price-wrapper .enquire2 {
+        font-size: .8rem;
+    }
+    
+
+
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    
+    .price {
+        font-size: .9rem;
+        margin: 0 6em;
+        padding: 0.6em 1em;
+        
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .price {
+        font-size: .85rem;
+        margin: 0 4em;
+
+    }
+
 }
 /*Software styling ends here*/
 
