@@ -25,3 +25,9 @@
     top: 2%;
     right: 35px;
 }
+
+@media screen and (max-width:480px) {
+    .popupForm-inner {
+        max-width: 70%;
+    }
+}
