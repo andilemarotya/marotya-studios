@@ -147,6 +147,8 @@ input {
     cursor: pointer;
 }
 
+/* Responsive designs*/
+
 @media screen and (max-width:480px) {
     .footer-logo {
        display: none;
@@ -168,6 +170,141 @@ input {
     }
     .list {
         padding-right: 0;
+    }
+    
+}
+
+@media screen and (min-width:481px) and (max-width:576px) {
+    .footer-logo {
+       display: none;
+    }
+    .info {
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+    }
+
+    #text {
+       width: 100%;
+        
+    }
+    .foot-links {
+        justify-content: space-around;
+        
+    }
+    .list {
+        padding-right: 0;
+    }
+    
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .footer-logo {
+       display: none;
+    }
+    .info {
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+    }
+
+    #text {
+       width: 100%;
+        
+    }
+    .foot-links {
+        justify-content: space-around;
+        
+    }
+    .list {
+        padding-right: 0;
+    }
+    
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    .info {
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+    }
+
+    #text {
+       width: 100%;
+        
+    }
+    .foot-links {
+        justify-content: space-around;
+        
+    }
+    .list {
+        padding-right: 0;
+    }
+    
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+
+    .info {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #text {
+       width: 100%;
+        
+    }
+    .foot-links {
+        justify-content: space-around;
+        
+    }
+    .list {
+        padding-right: 0;
+    }
+    
+}
+
+@media screen and (min-width:1201px) and (max-width:1600px) {
+
+    .info {
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+    }
+
+    #text {
+       width: 100%;
+        
+    }
+    .foot-links {
+        justify-content: space-around;
+        
+    }
+    .list {
+        padding-right: 0;
+    }
+
+    .f-home,
+    .f-services,
+    .f-about,
+    .f-contact {
+        
+    
+        font-size: 1.08rem;
+        
+    }
+
+    .f-partner,
+    .f-mail, .f-no, 
+    .terms {
+       
+        font-size: 1.08rem;
     }
     
 }
