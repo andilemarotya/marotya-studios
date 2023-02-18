@@ -128,7 +128,7 @@
 
 @media screen and (max-width:480px) {
     .services_section1 .Website-wrapper .web-text-wrapper {
-        padding-bottom: 1.6em;
+        padding-bottom: 2em;
     }
     .services_section1 .Website-wrapper .web-text-wrapper .web-text {
         width: 100%;
@@ -143,6 +143,12 @@
     .price {
         font-size: .9rem;
         margin: 0;
+        padding: 0.6em 1em;
+    }
+
+    .services_section1 .Website-wrapper .img-wrapper .web-img {
+        width: 100%;
+        
     }
 }
 
@@ -157,7 +163,12 @@
     padding: 16% 6%;
 }
 
-
+@media screen and (max-width:480px) {
+    .services_section1 .Website-wrapper .web-text-wrapper .mobile-text {
+        width: 100%;
+        padding: 10% 6%;
+    }
+}
 /*Mobile application styling ends here*/
 
 
@@ -191,6 +202,12 @@
     background: rgba(0, 0, 0, 0.57);
 }
 
+@media screen and (max-width:480px) {
+    .services_section1 .Website-wrapper .web-text-wrapper .software-text {
+        width: 100%;
+        padding: 10% 6%;
+    }
+}
 /*Software styling ends here*/
 
 .EnquireForm {

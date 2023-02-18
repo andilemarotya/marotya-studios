@@ -109,6 +109,7 @@ const Services = () => {
                     </div>
                 </div>
                 {/*Software service Section style ends here*/}
+                <br/><br/><br/>
                 <hr/>
                 <br/><br/>
 
