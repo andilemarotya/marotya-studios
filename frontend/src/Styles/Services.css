@@ -15,9 +15,16 @@
     padding-bottom: 10px;
     
 }
+
+#hr-line1 {
+    margin-bottom: 5em;
+}
 @media screen and (max-width:480px) {
     .services_section1 .serv_header {
         font-size: 1.4rem;
+    }
+    #hr-line1 {
+        margin-bottom: 4em;
     }
 }
 
@@ -27,7 +34,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /*padding-top: ;*/
+   
     padding-bottom: 5%;
 
 }
@@ -155,7 +162,7 @@
     }
 
     .hr-line {
-        margin: 2.4em 0;
+        margin: 1.675em 0;
     }
 }
 

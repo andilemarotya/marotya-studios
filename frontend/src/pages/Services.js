@@ -34,9 +34,7 @@ const Services = () => {
         <div>
             <section className="services_section1">
                 <h3 className="serv_header">Our Services</h3>
-                <hr/>
-                <br/><br/> <br/> <br/> <br/>
-                
+                <hr id="hr-line1"/>
 
 
                 {/* Website Section Style starts here */}
