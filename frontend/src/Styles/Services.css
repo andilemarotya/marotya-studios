@@ -6,7 +6,7 @@
 }
 
 .services_section1 .serv_header {
-    font-size: 200%;
+    font-size: 2rem;
     color: rgba(24, 160, 251, 1);
     display: flex;
     justify-content: center;
@@ -14,6 +14,11 @@
     letter-spacing: 0.045rem;
     padding-bottom: 10px;
     
+}
+@media screen and (max-width:480px) {
+    .services_section1 .serv_header {
+        font-size: 1.4rem;
+    }
 }
 
 /*Website section styling* starts here*/
@@ -26,21 +31,27 @@
     padding-bottom: 5%;
 
 }
+@media screen and (max-width:480px) {
+    .services_section1 .Website-wrapper {
+        flex-direction: column;
+    }
+}
 
 .services_section1 .Website-wrapper .web-text-wrapper {
     width: 100%;
-    /*border:  0.5px solid #000000;*/
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+
 .services_section1 .Website-wrapper .web-text-wrapper .Web-text-header {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 200%;
+    font-size: 2rem;
     padding-bottom: 7%;
 }
 
@@ -113,6 +124,26 @@
 .services_section1 .Website-wrapper .img-wrapper .web-img {
     width: 74%;
     
+}
+
+@media screen and (max-width:480px) {
+    .services_section1 .Website-wrapper .web-text-wrapper {
+        padding-bottom: 1.4em;
+    }
+    .services_section1 .Website-wrapper .web-text-wrapper .web-text {
+        width: 100%;
+        padding: 10% 6%;
+    }
+
+    .services_section1 .Website-wrapper .img-wrapper .price-wrapper {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .price {
+        font-size: .8rem;
+        margin: 0;
+    }
 }
 
 /*Website section styling ends here*/
