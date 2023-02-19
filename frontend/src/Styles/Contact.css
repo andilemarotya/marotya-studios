@@ -114,4 +114,8 @@
        min-height: 6vh;
        max-height: 10vh;
     }
+
+    .submit-btn {
+        width: 32%;
+    }
 }
