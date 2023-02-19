@@ -105,13 +105,13 @@
     }
 
     .contact-form {
-        width: 72%;
+        width: 78%;
         height: 38vh;
         right: 8%;
     }
 
     .your-message {
        min-height: 6vh;
-       max-height: 14vh;
+       max-height: 10vh;
     }
 }
