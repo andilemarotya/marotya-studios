@@ -25,7 +25,7 @@
 
 @media screen and (min-width:320px) and (max-width:322px) {
     .ms{
-        font-size: .5em;
+        font-size: 1.5em;
         height: 48px;
     }
 }
@@ -147,14 +147,41 @@ hr {
 }
 
 @media screen and (min-width:320px) and (max-width:322px) {
+    .home-text {
+        height: 18vh;
+        font-size: .7rem;
+    }
+    .ms-services{
+        width: 100%;
+    }
     
+    .serv-wrapper{
+         width: 100%;
+    }
+    
+    .serv-text-wrapper{
+        font-size: 1rem;
+    }
+    
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .h_service_pic{
+       width: 96%;
+       height: 16vh;
+    }
+    
+    .link-details {
+        width: 96%;
+        border-radius: 10px 0;
+        font-size: .8rem;
+    }
 }
 
 @media screen and (min-width:321px) and (max-width : 480px) {
-    .ms{
-        font-size: 2em;
-        height: 50px;
-    }
+   
     .home-text {
         height: 200px;
         font-size: 0.9em;

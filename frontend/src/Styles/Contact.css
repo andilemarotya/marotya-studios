@@ -93,8 +93,37 @@
     text-align: left;
     padding: 0 1%;
 }
+@media screen and (max-width:322px) {
+    .contacts {
+        flex-direction: column;
+        height: 70vh;
+    }
+    
+    .us {
+        width: 100%;
+        left: 0;
+        font-size: .8rem;
+    }
 
-@media screen and (max-width:480px) {
+    .contact-form {
+        width: 100%;
+        height: 35vh;
+        right: 8%;
+        font-size: .825rem;
+    }
+
+    .your-message {
+       min-height: 6vh;
+       max-height: 10vh;
+    }
+
+    .submit-btn {
+        font-size: .6rem;
+        width: 44%;
+    }
+   
+}
+@media screen and (min-width:325px) and (max-width:480px) {
     .contacts {
         flex-direction: column;
     }
