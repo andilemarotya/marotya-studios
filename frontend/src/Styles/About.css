@@ -13,11 +13,15 @@
     letter-spacing: 0.045rem;
     padding-bottom: 10px;
 }
+@media screen and (max-width:480px) {
+    .header {
+        font-size: 1.5em;
+    }
+}
 
 .company {
     width: 100%;
     height: 260px;
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,10 +33,9 @@
     justify-content: center;
     align-items: center;
     padding: 1% 8%;
-   
     background: #E1E1E1;
     border-radius: 8px;
-    font-size: 200%;
+    font-size: 2em;
     letter-spacing: 1px;
     font-family: 'Inter';
     font-style: normal;
@@ -45,7 +48,7 @@
 
 .management {
     width: 100%;
-    height: 90vh;
+    margin: 3.1em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +88,6 @@
 
 .photo {
     width: 28%;
-   
 }
 
 .details {
@@ -93,7 +95,7 @@
     width: 90%;
     height: 60%;
     align-items: center;
-    background: #0E365B;
+    background: #0E365B;    
 }
 
 .intel {
@@ -105,4 +107,27 @@
     position: relative;
     left: 2%;
     top: 2%;
+}
+
+@media screen and (max-width:480px) {
+    .company {
+        height: none;
+        font-size: .8rem;
+    }
+    #descr-text {
+        width: 100%;
+    }
+    #manag-header {
+        font-size: 1.8rem;
+    }
+    #team {
+        height: 19vh;
+    }
+    .person-wrapper {
+        font-size: .45rem;
+    }
+    .photo {
+        width: 52%;
+    }
+    
 }

@@ -33,9 +33,10 @@ const Contact = () => {
             <div className="contacts">
                 <section className="contact-text">
                     <p className="us">
-                        To get in touch with us fill out the form on the right.
+                        To get in touch with us fill out the form on this page.
                         If you need to get in touch with us urgently you can call us!  The management phone numbers are on the “About Us page”
                     </p>
+
                 </section>
 
                 <section className="contact-form">

@@ -22,7 +22,15 @@
     align-items: center;
     
 }
-@media screen and (max-width : 480px) {
+
+@media screen and (min-width:320px) and (max-width:322px) {
+    .ms{
+        font-size: .5em;
+        height: 48px;
+    }
+}
+
+@media screen and (min-width:325px) and (max-width : 480px) {
     .ms{
         font-size: 1.6em;
         height: 50px;
@@ -138,8 +146,11 @@ hr {
     justify-content: center;
 }
 
+@media screen and (min-width:320px) and (max-width:322px) {
+    
+}
 
-@media screen and (max-width : 480px) {
+@media screen and (min-width:321px) and (max-width : 480px) {
     .ms{
         font-size: 2em;
         height: 50px;
