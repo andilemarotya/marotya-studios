@@ -93,23 +93,34 @@
     text-align: left;
     padding: 0 1%;
 }
-@media screen and (max-width:322px) {
+
+@media screen and (min-width:280px) and (max-width:325px) {
     .contacts {
         flex-direction: column;
-        height: 70vh;
+        height: 65vh;
+        margin-top: 2em;
+        margin-bottom: 6.2em;
+        gap: 30px;
     }
     
     .us {
         width: 100%;
         left: 0;
-        font-size: .8rem;
+        font-size: .6rem;
     }
 
     .contact-form {
         width: 100%;
-        height: 35vh;
-        right: 8%;
-        font-size: .825rem;
+        height: 40vh;
+        right: 6%;
+        font-size: .6rem;
+    }
+    .reader {
+        width: 95%;
+    }
+
+    .InputContact {
+        font-size: .6rem;
     }
 
     .your-message {
@@ -118,8 +129,8 @@
     }
 
     .submit-btn {
-        font-size: .6rem;
-        width: 44%;
+        font-size: .56rem;
+        width: 35%;
     }
    
 }
