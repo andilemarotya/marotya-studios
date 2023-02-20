@@ -149,7 +149,11 @@ input {
 
 /* Responsive designs*/
 
-@media screen and (max-width:480px) {
+@media screen and (min-width:280px) and (max-width:325px) {
+    .Footer{
+        height: 45vh;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #00386B;
+    }
     .footer-logo {
        display: none;
     }
@@ -157,7 +161,66 @@ input {
         width: 100%;
         top: 0;
         left: 0;
+        font-size: 1em;
         
+    }
+
+    #text {
+       width: 100%;
+        font-size: .8rem;
+    }
+    
+    .email {
+        
+    }
+    
+    .fill {
+        width: 40%;
+        font-size: .7rem;
+    }
+    
+    .btn-sub {
+        width: 45%;
+        font-size: .72rem;
+    }
+    .foot-links {
+        justify-content: space-around;
+        
+    }
+    .list {
+        padding-right: 0;
+    }
+
+    .f-home,
+    .f-services,
+    .f-about,
+    .f-contact {
+        
+        font-size: .8rem;
+    }
+
+    .f-partner,
+    .f-mail, .f-no, 
+    .terms {
+       
+        font-size: .8rem;
+    }
+    .end {
+        font-size: .65rem;
+    }
+    .icons {
+        font-size: .8rem;
+    }
+    
+}
+@media screen and (min-width:325px) and (max-width:480px) {
+    .footer-logo {
+       display: none;
+    }
+    .info {
+        width: 100%;
+        top: 0;
+        left: 0;
     }
 
     #text {
