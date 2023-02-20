@@ -146,9 +146,10 @@ hr {
     justify-content: center;
 }
 
-@media screen and (min-width:320px) and (max-width:322px) {
+@media screen and (min-width:280px) and (max-width:325px) {
     .home-text {
-       display: none;
+        height: 42vh;
+       font-size: .8rem;
     }
     .ms-services{
         width: 100%;
@@ -179,7 +180,7 @@ hr {
     }
 }
 
-@media screen and (min-width:321px) and (max-width : 480px) {
+@media screen and (min-width:325px) and (max-width : 480px) {
    
     .home-text {
         height: 200px;
