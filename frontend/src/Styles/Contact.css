@@ -96,6 +96,7 @@
 
 @media screen  and (max-width:325px) {
     .contacts {
+        width: 100%;
         flex-direction: column;
         height: 65vh;
         margin-top: 2em;
@@ -136,6 +137,7 @@
 }
 @media screen and (min-width:325px) and (max-width:480px) {
     .contacts {
+        width: 100%;
         flex-direction: column;
         height: 65vh;
         margin-top: 2em;
