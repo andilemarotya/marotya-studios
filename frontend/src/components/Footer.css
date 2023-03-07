@@ -79,10 +79,6 @@ input {
     flex-direction: row;
     
 }
-.foot-links:hover {
-    color: gold;
-    transition: .5s ease;
-}
 
 .list {
     display: flex;

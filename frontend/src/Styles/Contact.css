@@ -94,7 +94,7 @@
     padding: 0 1%;
 }
 
-@media screen and (min-width:280px) and (max-width:325px) {
+@media screen  and (max-width:325px) {
     .contacts {
         flex-direction: column;
         height: 65vh;
@@ -148,6 +148,14 @@
         width: 78%;
         height: 38vh;
         right: 8%;
+    }
+
+    .reader {
+        width: 95%;
+    }
+
+    .InputContact {
+        font-size: .6rem;
     }
 
     .your-message {
