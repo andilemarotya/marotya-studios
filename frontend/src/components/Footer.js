@@ -35,7 +35,7 @@ const Footer = () => {
 
                         <ul className="list2">
                             
-                            <a href="mailto:marotyastudios@gmail.com" className="f-mail">marotyastudios@gmail.com</a>
+                            <a href="mailto:marotyastudios@gmail.com" className="f-mail">support@marotyastudios.com</a>
                             <a href="tel:+27729759950" className="f-no">Phone: +27 72 975 9950</a>
                             <Link to="/Terms" className="terms">Terms & Conditions</Link>
                         </ul>
