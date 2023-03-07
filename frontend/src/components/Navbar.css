@@ -105,12 +105,13 @@
         background-color: #003866;
         right: 0;
         top: 70px;
-        height: 45vh;
+        height: 75vh;
         transition: all 0.5s ease-out;
         width: 50%;
         border-radius: 0px 0px 0px 40px;
         gap: 2px;
         z-index: 1;
+       
         
     }
     
@@ -120,8 +121,9 @@
         align-items: center;
         margin: 15px 2.4rem;
         transition: all 0.5s ease;
-        font-size: 1rem;
-        padding: none;
+        font-size: 1.4rem;
+        padding: 0;
+        background: none;
     }
 
     .mobile-menu{
