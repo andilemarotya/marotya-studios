@@ -142,7 +142,7 @@
         flex-direction: column;
         height: 65vh;
         margin-top: 2em;
-        margin-bottom: 6.2em;
+        margin-bottom: 5em;
         gap: 30px;
     }
     
@@ -150,7 +150,7 @@
         position: none;
         left: 0;
         width: 100%;
-        font-size: .6rem;
+        font-size: .75rem;
     }
 
     .contact-form {
