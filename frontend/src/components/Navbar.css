@@ -91,7 +91,7 @@
     .log{
         display: flex;
         position: absolute;
-        top: 15px;
+        top: 14px;
         left: 35px;
     }
 
@@ -104,23 +104,23 @@
         list-style: none;
         background-color: #003866;
         right: 0;
-        top: 75px;
-        bottom: 150px;
+        top: 70px;
+        height: 45vh;
         transition: all 0.5s ease-out;
-        width: 44%;
+        width: 50%;
         border-radius: 0px 0px 0px 40px;
+        gap: 2px;
         
     }
     
-    .home,
-    .services,
-    .about,
-    .contact{
+    .link,.active{
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 15px 2.4rem;
         transition: all 0.5s ease;
+        font-size: 1rem;
+        padding: none;
     }
 
     .mobile-menu{

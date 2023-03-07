@@ -104,8 +104,8 @@
     }
     
     .us {
+        position: none;
         width: 100%;
-        left: 0;
         font-size: .6rem;
     }
 

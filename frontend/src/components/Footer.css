@@ -24,28 +24,20 @@
 
 
 .info {
-
+    padding-top: 1em;
     width:40%;
-    position: relative;
-    top: 2%;
-    left: 2%;
     justify-content: space-between;
     padding-bottom: 10%;
 
 }
 
 #text {
-    position: relative;
-    left: 2%;
-    
+    margin: 0em 1em;
 }
 
 .email {
-    
-    padding-bottom: 6%;
-    position: relative;
-    top: 8%;
-
+    margin: 1em 1em;
+    width: 80%;
 }
 
 input {
@@ -73,6 +65,8 @@ input {
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    
+    
     
 }
 

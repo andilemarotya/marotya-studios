@@ -18,6 +18,21 @@
         font-size: 1.5em;
     }
 }
+@media screen  and (min-width:480px) and (max-width:576px) {
+    .header {
+        font-size: 1.5em;
+    }
+}
+@media screen  and (min-width:576px) and (max-width:768px) {
+    .header {
+        font-size: 1.5em;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .header {
+        font-size: 1.6em;
+    }
+}
 
 .company {
     width: 100%;
@@ -139,7 +154,7 @@
     }
     .company {
         height: 23em;
-        font-size: .8rem;
+        font-size: .7rem;
     }
     #descr-text {
         width: 100%;
@@ -151,10 +166,90 @@
         height: 19vh;
     }
     .person-wrapper {
-        font-size: .45rem;
+        font-size: .34rem;
     }
     .photo {
         width: 52%;
     }
     
+}
+@media screen and (min-width:480px) and (max-width:576px) {
+    .abt-page {
+        margin: 1.5rem 1.8rem;
+    }
+    .company {
+        height: 23em;
+        font-size: .65rem;
+    }
+    #descr-text {
+        width: 100%;
+    }
+    #manag-header {
+        font-size: 1.8rem;
+    }
+    #team {
+        height: 30vh;
+    }
+    .person-wrapper {
+        font-size: .48rem;
+    }
+    .photo {
+        width: 52%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    .abt-page {
+        margin: 1.5rem 1.8rem;
+    }
+    .company {
+        height: 21em;
+        font-size: .65rem;
+    }
+    #descr-text {
+        width: 90%;
+    }
+    #manag-header {
+        font-size: 1.8rem;
+    }
+    #team {
+        height: 30vh;
+    }
+    .person-wrapper {
+        font-size: .48rem;
+    }
+    .photo {
+        width: 52%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px) {
+    .abt-page {
+        margin: 1.5rem 1.8rem;
+    }
+    .company {
+        height: 21em;
+        font-size: .8rem;
+    }
+    #descr-text {
+        width: 90%;
+    }
+
+    #manag-header {
+        font-size: 1.9rem;
+    }
+
+    .person-wrapper {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .company {
+        font-size: .96rem;
+    }
+}
+@media screen and (min-width:1400px) and (max-width:1600px) {
+    .company {
+        height: 20em;
+        font-size: 1.2rem;
+    }
 }
