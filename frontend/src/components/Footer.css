@@ -146,7 +146,7 @@ input {
 
 @media screen and (min-width:280px) and (max-width:325px) {
     .Footer{
-        height: 45vh;
+        height: 50vh;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0) 100%), #00386B;
     }
     .footer-logo {
