@@ -146,7 +146,7 @@ input {
 
 @media screen and (max-width:325px) {
     .Footer{
-        height: 50vh;
+        height: 60vh;
     }
     .footer-logo {
        display: none;
