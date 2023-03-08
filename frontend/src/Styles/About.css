@@ -207,14 +207,24 @@
     #manag-header {
         font-size: 1.8rem;
     }
-    #team {
-        height: 30vh;
+    .team {
+        height: 145vh;
+        flex-direction: column;
+        gap: 10px;
+        
     }
     .person-wrapper {
-        font-size: .48rem;
+        width: 270px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.4rem;
+        margin: 1em 0;
     }
     .photo {
         width: 52%;
+    }
+    .intel {
+        font-size: .8rem;
     }
 }
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -231,11 +241,11 @@
     #manag-header {
         font-size: 1.8rem;
     }
-    #team {
+    .team {
         height: 30vh;
     }
     .person-wrapper {
-        font-size: .48rem;
+        width: 210px;
     }
     .photo {
         width: 52%;
@@ -256,9 +266,16 @@
     #manag-header {
         font-size: 1.9rem;
     }
+    .team {
+        height: 20vh;
+    }
 
     .person-wrapper {
-        font-size: .7rem;
+        width: 210px;
+        font-size: .75rem;
+    }
+    .photo {
+        width: 48%;
     }
 }
 
@@ -266,8 +283,14 @@
     .company {
         font-size: .96rem;
     }
+    .team {
+        height: 70vh;
+    }
+    .photo {
+        width: 48%;
+    }
 }
-@media screen and (min-width:1400px) and (max-width:1600px) {
+@media screen and (min-width:1480px) and (max-width:1600px) {
     .company {
         height: 20em;
         font-size: 1.2rem;
