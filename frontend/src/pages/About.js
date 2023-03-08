@@ -30,7 +30,7 @@ const About = () => {
 
             <div className="management">
                 <h3 id="manag-header">Management Team</h3>
-                <div id="team">
+                <div className="team">
                     <div className="person-wrapper">
                         <img src="/images/about/ace.png" alt="" className="photo"/>
                         <div className="details">
@@ -38,7 +38,7 @@ const About = () => {
                                 Mandile Marotya <br/><br/>
                                 CO-CEO / Co-founder     (Software engineer) <br/><br/>
                                 <a href="tel:+27729759950">Phone:  +27 72 975 9950 </a><br/><br/>
-                                <a href="mailto:marotyastudios@gmail.com">E-mail:  marotyastudios@gmail.com</a><br/>
+                                <a href="mailto:mandile@marotyastudios.com">E-mail:  mandile@marotyastudios.com</a><br/>
                             </p>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const About = () => {
                                 Ayanda Marotya <br/><br/>
                                 CO-CEO / Co-founder     (Software engineer) <br/><br/>
                                 <a href="tel:+27729759950">Phone:  +27 72 975 9950 </a><br/><br/>
-                                <a href="mailto:ayandamarotya@gmail.com">E-mail:  ayandamarotya@gmail.com</a><br/>
+                                <a href="mailto:ayanda@marotyastudios.com">E-mail:  ayanda@marotyastudios.com</a><br/>
                             </p>
                         </div>
                     </div>
@@ -62,7 +62,7 @@ const About = () => {
                                 Lebogang Sijila <br/><br/>
                                 CMO / Marketing manager <br/><br/>
                                 <a href="tel:+27729759950">Phone:  +27 62 380 1425 </a><br/><br/>
-                                <a href="mailto:lebosi709@gmail.com">E-mail:  lebosi709@gmail.com</a><br/>
+                                <a href="mailto:lebogangs@marotyastudios.com">E-mail:  lebogangs@marotyastudios.com</a><br/>
                             </p>
                         </div>
                     </div>
