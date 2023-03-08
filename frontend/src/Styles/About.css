@@ -296,3 +296,17 @@
         font-size: 1.2rem;
     }
 }
+@media screen and (min-width:2000px) {
+    .company {
+        font-size: 1.2rem;
+    }
+    .team {
+        height: 120vh;
+    }
+    .photo {
+        width: 40%;
+    }
+    .intel {
+        font-size: 1.4rem;
+    }
+}
