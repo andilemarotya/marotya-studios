@@ -124,7 +124,7 @@
     top: 2%;
 }
 
-@media screen and (min-width:320px) and (max-width:325px) {
+@media screen and (max-width:325px) {
     .abt-page {
         margin: 1.5rem 2rem;
     }
@@ -139,13 +139,23 @@
         font-size: 1.2rem;
     }
     .team {
-        height: 19vh;
+        height: 160vh;
+        flex-direction: column;
+        gap: 10px;
+        
     }
     .person-wrapper {
-        font-size: .45rem;
+        width: 235px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.4rem;
+        margin: 1em 0;
     }
     .photo {
         width: 52%;
+    }
+    .intel {
+        font-size: .94rem;
     }
 }
 @media screen and (min-width:325px) and (max-width:480px) {
