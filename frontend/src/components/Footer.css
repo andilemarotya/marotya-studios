@@ -144,8 +144,10 @@ input {
 
 /* Responsive designs*/
 
-@media screen and (min-width:280px) and (max-width:325px) {
-    
+@media screen and (max-width:325px) {
+    .Footer{
+        height: 50vh;
+    }
     .footer-logo {
        display: none;
     }
@@ -163,12 +165,12 @@ input {
     }
     
     .fill {
-        width: 45%;
+        width: 50%;
         font-size: .7rem;
     }
     
     .btn-sub {
-        width: 45%;
+        width: 50%;
         font-size: .72rem;
     }
     .foot-links {
