@@ -161,7 +161,7 @@ input {
     }
 
     #text {
-       width: 100%;
+        width: 100%;
         font-size: .8rem;
     }
     
@@ -216,8 +216,10 @@ input {
 
     #text {
        width: 100%;
-        
+       font-size: .8rem;
     }
+        
+    
 
     .fill {
         width: 50%;
@@ -234,6 +236,27 @@ input {
     }
     .list {
         padding-right: 0;
+    }
+
+    .f-home,
+    .f-services,
+    .f-about,
+    .f-contact {
+        
+        font-size: .8rem;
+    }
+
+    .f-partner,
+    .f-mail, .f-no, 
+    .terms {
+       
+        font-size: .8rem;
+    }
+    .end {
+        font-size: .7rem;
+    }
+    .icons {
+        font-size: .84rem;
     }
     
 }
