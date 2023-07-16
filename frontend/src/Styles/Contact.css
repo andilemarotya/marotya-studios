@@ -177,3 +177,131 @@
         width: 35%;
     }
 }
+
+@media screen and (min-width:480px) and (max-width:576px) {
+    .contacts {
+        width: 100%;
+        flex-direction: column;
+        height: 65vh;
+        margin-top: 2em;
+        margin-bottom: 7em;
+        gap: 30px;
+    }
+    
+    .us {
+        position: none;
+        left: 0;
+        width: 100%;
+        font-size: .78rem;
+    }
+
+    .contact-form {
+        width: 65%;
+        height: 40vh;
+        right: 6%;
+        font-size: .8rem;
+    }
+    .reader {
+        width: 95%;
+    }
+
+    .InputContact {
+        font-size: .8rem;
+    }
+
+    .your-message {
+       min-height: 6vh;
+       max-height: 10vh;
+    }
+
+    .submit-btn {
+        font-size: .58rem;
+        width: 35%;
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    .contacts {
+        width: 100%;
+        flex-direction: column;
+        height: 65vh;
+        margin-top: 2em;
+        margin-bottom: 7em;
+        gap: 30px;
+    }
+    
+    .us {
+        position: none;
+        left: 2;
+        width: 80%;
+        font-size: .8rem;
+    }
+
+    .contact-form {
+        width: 58%;
+        height: 30vh;
+        right: 6%;
+        font-size: .9rem;
+    }
+    .reader {
+        width: 95%;
+    }
+
+    .InputContact {
+        font-size: .9rem;
+    }
+
+    .your-message {
+       min-height: 6vh;
+       max-height: 10vh;
+    }
+
+    .submit-btn {
+        font-size: .7rem;
+        width: 35%;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .contacts {
+        width: 100%;
+    }
+    .us {
+        width: 60%;
+        font-size: .8rem;
+    }
+
+    .contact-form {
+        width: 60%;
+        height: 20vh;
+        font-size: .9rem;
+    }
+    .reader {
+        width: 100%;
+    }
+    .InputContact {
+        font-size: .9rem;
+    }
+
+    .your-message {
+       min-height: 6vh;
+       max-height: 10vh;
+    }
+
+    .submit-btn {
+        font-size: .8rem;
+        width: 35%;
+    }
+
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .contact-form {
+        width: 60%;
+        font-size: .9rem;
+    }
+}
+@media screen and (min-width:1450px) and (max-width:1600px) {
+    .contact-form {
+        width: 60%;
+        font-size: .9rem;
+    }
+}

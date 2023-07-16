@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import EnquirePopUp from "../components/EnquirePopUp";
 import '../Styles/Home.css';
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
 
@@ -10,6 +11,12 @@ const Home = () => {
     const [BtnPopUpGames , setBtnPopUpGames] = useState(false);
 
     return(
+            <>
+            <Helmet>
+                <title>Home</title>
+                <meta name="description" content="Check our Software Development services" />
+                <link rel="canonical" href="/" />
+            </Helmet>
        
             <section className="home_section1">
                 <h3 className="ms">Marotya Studios.</h3>
@@ -108,7 +115,7 @@ const Home = () => {
             </section>
 
            
-
+            </>
         
     );
 }
