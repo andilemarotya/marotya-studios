@@ -1,13 +1,45 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "../components/Footer.css";
 import {FaInstagram , FaFacebook, FaLinkedin, FaWhatsapp,} from 'react-icons/fa';
-
+import axios from "axios";
 
 
 
 const Footer = () => {
-    
+    const [email, setEmail] = useState("");
+    const [subscriptionStatus, setSubscriptionStatus] = useState("");
+
+    const handleSubscription = async (e) => {
+        e.preventDefault();
+
+        try {
+        // Make a request to Mailchimp API to add the subscriber
+        const response = await axios.post(
+            "https://us21.api.mailchimp.com/3.0/lists/81de093c5e/members"
+,
+            {
+            email_address: email,
+            status: "subscribed",
+            },
+            {
+            headers: {
+                Authorization: "Bearer 2044741c07a27d268da78db9423f6843-us21",
+            },
+            }
+        );
+
+        if (response.status === 200) {
+            setSubscriptionStatus("Subscribed successfully");
+        } else {
+            setSubscriptionStatus("Subscription failed");
+        }
+        } catch (error) {
+        console.error(error);
+        setSubscriptionStatus("Internal server error");
+        }
+    };
+
     return ( 
         <footer className="Footer">      
                 
@@ -19,11 +51,20 @@ const Footer = () => {
                 <div className="info">
                     <span id="text">To get updates on our new releases fill in below.</span>
 
-                    <form className="email"> 
-                        <input className="fill" placeholder="Enter email" name="sub_email" required/>
-                        <button className="btn-sub">Subscribe</button>
+                    <form className="email" onSubmit={handleSubscription}>
+                        <input
+                        className="fill"
+                        placeholder="Enter email"
+                        name="sub_email"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <button className="btn-sub" type="submit">
+                            Subscribe
+                        </button>
                     </form>
-
+                    {subscriptionStatus && <p>{subscriptionStatus}</p>}
                     
                     <ul className="foot-links">
                         <ul className="list">
