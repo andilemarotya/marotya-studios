@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Terms from "./pages/Terms";
 
 

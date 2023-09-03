@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import "../components/Footer.css";
+import "../Footer/Footer.css";
 import {FaInstagram , FaFacebook, FaLinkedin, FaWhatsapp,} from 'react-icons/fa';
 import axios from "axios";
+import NewsletterSubscribe from "./NewsLetterSubscribe";
 
 
 
@@ -24,7 +25,7 @@ const Footer = () => {
             },
             {
             headers: {
-                Authorization: "Bearer 2044741c07a27d268da78db9423f6843-us21",
+                Authorization: "Bearer faea132b120a01271d843953ef0343a6-us21",
             },
             }
         );
@@ -50,20 +51,21 @@ const Footer = () => {
                 
                 <div className="info">
                     <span id="text">To get updates on our new releases fill in below.</span>
-
-                    <form className="email" onSubmit={handleSubscription}>
+                    {/*
+                    <form className="email">
                         <input
                         className="fill"
                         placeholder="Enter email"
                         name="sub_email"
                         required
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                       
                         />
                         <button className="btn-sub" type="submit">
                             Subscribe
                         </button>
                     </form>
+                    */}
+                    <NewsletterSubscribe />
                     {subscriptionStatus && <p>{subscriptionStatus}</p>}
                     
                     <ul className="foot-links">
