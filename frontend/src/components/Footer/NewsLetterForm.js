@@ -5,8 +5,9 @@ import Loading from '../loading';
 
 const NewsLetterForm = ({status, message, onValidated}) => {
 
-    const [ error, setError ] = useState(null);
+  const [ error, setError ] = useState(null);
   const [ email, setEmail ] = useState(null);
+
 
   /**
    * Handle form submit.
@@ -21,6 +22,7 @@ const NewsLetterForm = ({status, message, onValidated}) => {
       setError( 'Please enter a valid email address' );
       return null;
     }
+    
 
     const isFormValidated = onValidated({ EMAIL: email });
 
@@ -64,21 +66,20 @@ const NewsLetterForm = ({status, message, onValidated}) => {
 
   return (
     <div>
-        <form className="email">
+        <div className="email">
             <input
             onChange={(event) => setEmail(event?.target?.value ?? '')}
             className="fill"
             placeholder="Enter email"
             name="sub_email"
-            require
             onKeyUp={(event) => handleInputKeyEvent(event)}         
             />
             <button className="btn-sub" type="submit" onClick={handleFormSubmit}>
                 Subscribe
             </button>
-        </form>
+        </div>
         <div className="min-h-42px">
-          { 'sending' === status ? <Loading showSpinner message="Sending..." contentColorClass="text-white" hasVisibilityToggle={false}/> : null }
+          { 'sending' === status ? <Loading  message="Sending..." contentColorClass="text-white" hasVisibilityToggle={false}/> : null }
           {'error' === status || error ? (
           <div
               className="text-red-700 pt-2"

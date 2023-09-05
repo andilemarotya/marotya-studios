@@ -8,39 +8,7 @@ import NewsletterSubscribe from "./NewsLetterSubscribe";
 
 
 const Footer = () => {
-    const [email, setEmail] = useState("");
-    const [subscriptionStatus, setSubscriptionStatus] = useState("");
-
-    const handleSubscription = async (e) => {
-        e.preventDefault();
-
-        try {
-        // Make a request to Mailchimp API to add the subscriber
-        const response = await axios.post(
-            "https://us21.api.mailchimp.com/3.0/lists/81de093c5e/members"
-,
-            {
-            email_address: email,
-            status: "subscribed",
-            },
-            {
-            headers: {
-                Authorization: "Bearer faea132b120a01271d843953ef0343a6-us21",
-            },
-            }
-        );
-
-        if (response.status === 200) {
-            setSubscriptionStatus("Subscribed successfully");
-        } else {
-            setSubscriptionStatus("Subscription failed");
-        }
-        } catch (error) {
-        console.error(error);
-        setSubscriptionStatus("Internal server error");
-        }
-    };
-
+    
     return ( 
         <footer className="Footer">      
                 
@@ -66,7 +34,7 @@ const Footer = () => {
                     </form>
                     */}
                     <NewsletterSubscribe />
-                    {subscriptionStatus && <p>{subscriptionStatus}</p>}
+                    
                     
                     <ul className="foot-links">
                         <ul className="list">
