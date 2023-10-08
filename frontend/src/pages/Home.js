@@ -16,6 +16,17 @@ const Home = () => {
                 <title>Home</title>
                 <meta name="description" content="Check our Software Development services" />
                 <link rel="canonical" href="/" />
+
+                {/* Add the Google Analytics gtag.js script here */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-28MPJLFSQ9"></script>
+                <script>
+                    {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-28MPJLFSQ9');
+                    `}
+                </script>
             </Helmet>
        
             <section className="home_section1">

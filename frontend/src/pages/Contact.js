@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../Styles/Contact.css";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { Helmet } from "react-helmet-async";
 
 
 const Contact = () => {
@@ -26,6 +26,23 @@ const Contact = () => {
 
         
     return(
+        <>
+        <Helmet>
+            <title>Contact</title>
+            <meta name="description" content="Contact us for more info" />
+            <link rel="canonical" href="/contact" />
+
+            {/* Add the Google Analytics gtag.js script here */}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-28MPJLFSQ9"></script>
+            <script>
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-28MPJLFSQ9');
+                `}
+            </script>
+        </Helmet>
         <div className="contact_page">
             <h3 id="contact-header">Contact Us</h3>
             <hr/>
@@ -62,6 +79,7 @@ const Contact = () => {
 
            
         </div>
+        </>
     );
 }
 

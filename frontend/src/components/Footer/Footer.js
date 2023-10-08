@@ -19,20 +19,7 @@ const Footer = () => {
                 
                 <div className="info">
                     <span id="text">To get updates on our new releases fill in below.</span>
-                    {/*
-                    <form className="email">
-                        <input
-                        className="fill"
-                        placeholder="Enter email"
-                        name="sub_email"
-                        required
-                       
-                        />
-                        <button className="btn-sub" type="submit">
-                            Subscribe
-                        </button>
-                    </form>
-                    */}
+                    
                     <NewsletterSubscribe />
                     
                     

@@ -4,6 +4,7 @@ import { useState } from "react";
 import EnquirePopUp from "../components/EnquirePopUp";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet-async";
 
 
 const Services = () => {
@@ -31,6 +32,23 @@ const Services = () => {
     
 
     return(
+        <>
+        <Helmet>
+            <title>Services</title>
+            <meta name="description" content="Check our Software Development services" />
+            <link rel="canonical" href="/services" />
+
+            {/* Add the Google Analytics gtag.js script here */}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-28MPJLFSQ9"></script>
+            <script>
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-28MPJLFSQ9');
+                `}
+            </script>
+        </Helmet>
         <div>
             <section className="services_section1">
                 <h3 className="serv_header">Our Services</h3>
@@ -181,6 +199,7 @@ const Services = () => {
             </section>
 
         </div>
+        </>
     );
 }
 
