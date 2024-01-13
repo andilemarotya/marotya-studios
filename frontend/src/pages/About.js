@@ -1,8 +1,26 @@
 import React from "react";
 import "../Styles/About.css";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
     return (
+        <>
+        <Helmet>
+            <title>About</title>
+            <meta name="description" content="Learn about us" />
+            <link rel="canonical" href="/about" />
+
+            {/* Add the Google Analytics gtag.js script here */}
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-28MPJLFSQ9"></script>
+            <script>
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-28MPJLFSQ9');
+                `}
+            </script>
+        </Helmet>
         <section className="abt-page">
             <h3 className="header">About Us</h3>
             <hr/>
@@ -74,7 +92,7 @@ const About = () => {
 
            
         </section>
-             
+        </>
 
     );
 }
