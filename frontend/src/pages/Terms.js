@@ -6,8 +6,11 @@ const Terms = () => {
     return (
         <>
         <Helmet>
-            <title>Terms and Conditions</title>
-            <meta name="description" content="Check our terms and conditions page" />
+            <title>Marotya Studios - Terms and Conditions</title>
+            <meta 
+            name="description" 
+            content="Review the terms and conditions of Marotya Studios. 
+            Our commitment to transparency and professionalism ensures a clear understanding of the guidelines governing our software development services." />
             <link rel="canonical" href="/terms" />
 
             {/* Add the Google Analytics gtag.js script here */}

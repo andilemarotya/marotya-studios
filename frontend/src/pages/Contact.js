@@ -28,8 +28,11 @@ const Contact = () => {
     return(
         <>
         <Helmet>
-            <title>Contact</title>
-            <meta name="description" content="Contact us for more info" />
+            <title>Contact Marotya Studios - Let's Discuss Your Project</title>
+            <meta 
+            name="description" 
+            content="Get in touch with Marotya Studios for top-notch software development services. 
+            Whether you have questions, ideas, or projects in mind, our team is ready to collaborate and bring your vision to reality." />
             <link rel="canonical" href="/contact" />
 
             {/* Add the Google Analytics gtag.js script here */}

@@ -34,8 +34,10 @@ const Services = () => {
     return(
         <>
         <Helmet>
-            <title>Services</title>
-            <meta name="description" content="Check our Software Development services" />
+            <title>Our Services - Marotya Studios</title>
+            <meta name="description" 
+            content="Discover our comprehensive software development services at Marotya Studios. 
+            From web and mobile app development to AI and ML solutions, we tailor innovative technologies to meet your business needs." />
             <link rel="canonical" href="/services" />
 
             {/* Add the Google Analytics gtag.js script here */}

@@ -6,8 +6,10 @@ const About = () => {
     return (
         <>
         <Helmet>
-            <title>About</title>
-            <meta name="description" content="Learn about us" />
+            <title>About Marotya Studios - Empowering Businesses with Technology</title>
+            <meta name="description" 
+            content="Learn about Marotya Studios, a leading software development company committed to empowering businesses through innovative web, mobile, AI, and ML solutions. 
+            Discover our team, values, and commitment to excellence." />
             <link rel="canonical" href="/about" />
 
             {/* Add the Google Analytics gtag.js script here */}

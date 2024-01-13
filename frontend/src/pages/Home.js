@@ -13,8 +13,10 @@ const Home = () => {
     return(
             <>
             <Helmet>
-                <title>Home</title>
-                <meta name="description" content="Check our Software Development services" />
+                <title>Welcome to Marotya Studios - Your Partner in Innovation</title>
+                <meta name="description" 
+                content="Explore cutting-edge software development services at Marotya Studios. 
+                We specialize in web, mobile app, AI, and ML solutions, bringing your ideas to life with expertise and creativity." />
                 <link rel="canonical" href="/" />
 
                 {/* Add the Google Analytics gtag.js script here */}
