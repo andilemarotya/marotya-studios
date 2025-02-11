@@ -75,17 +75,6 @@ const About = () => {
                         </div>
                     </div>
                         
-                    <div className="person-wrapper">
-                        <img src="/images/about/lebo.png" alt="" className="photo"/>
-                        <div className="details">
-                            <p className="intel">
-                                Lebogang Sijila <br/><br/>
-                                CMO / Marketing manager <br/><br/>
-                                <a href="tel:+27729759950">Phone:  +27 62 380 1425 </a><br/><br/>
-                                <a href="mailto:lebogangs@marotyastudios.com">E-mail:  lebogangs@marotyastudios.com</a><br/>
-                            </p>
-                        </div>
-                    </div>
 
                 </div>
 
